@@ -1,6 +1,8 @@
 composer.lock
 /var/cache/*
 /var/logs/*
+/var/sessions/*
 !var/cache/.gitkeep
 !var/logs/.gitkeep
-/vendor
+!var/sessions/.gitkeep
+/vendor/
