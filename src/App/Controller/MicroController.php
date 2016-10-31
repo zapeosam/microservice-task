@@ -10,7 +10,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 class MicroController extends Controller
 {
     /**
-     * @Route("/urltopdf")
+     * @Route("/api/urltopdf")
      */
     public function urltopdfAction(Request $request)
     {

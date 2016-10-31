@@ -1,37 +1,35 @@
-Sipsynergy  Task
+URL to PDF Symfony 3.1 example
 ==================
 
-Prerequisites
+Instalation
 -------------
 
-- Fork this repository as a starting point
-- Create a virtual machine using Vagrant (<http://www.vagrantup.com/>) with relevant php packages and dependencies
-- Include Vagrant configuration files, so we can test your code
+- clone this repository 
+- run `composer install` in the project folder
 
-Task
+
+Test
 ----
+Option 1 
 
-You will be creating a small API microservice : "URL to PDF service".
+in your terminal go to your project `web/` folder
+in terminal run command `php -S localhost:8000` 
 
-Create Symfony Components based stack project, using composer.
+in your browser go to address
 
+`http://localhost:8000/api/urltopdf?url=http://www.google.com`
 
-The end result should be allowing your application to accept URL via HTTP call and return PDF 
-(return 'application/pdf' content type and PDF containing requested url contents)
+or in terminal
 
-e.g.:
- 
-`GET http://localhost:8000/api/to-pdf?url=http://www.google.com`
+`curl -o your_target_file.pdf http://localhost:8000/urltopdf?url=http://www.google.com`
 
+Option 2
 
-The main focus of this task is to demonstrate architectural decisions you undertake.
+in your terminal go to your project folder
+spin up vagrant vm by using the command `vagrant up` 
 
-You may complete the task in any way you see fit (it does not have to be finished). 
+`http://localhost:8080/api/urltopdf?url=http://www.google.com`
 
-Conclusion
-----------
+or in terminal
 
-We would suggest that you use git commits in a way that allows the reviewer to understand the thought process taken to achieve each given goal.
-
-In your repository *PROGRESS* file, you should note your experience with the task, and provide some critique to the codebase as a whole.
-
+`curl -o your_target_file.pdf http://localhost:8080/urltopdf?url=http://www.google.com`
