@@ -1,4 +1,7 @@
 {
+    "name": "zapeosam/urltopdf-microservice",
+    "license": "LGPL",
+    "type": "project",
     "require": {
         "symfony/symfony": "^3.1",
         "sensio/framework-extra-bundle": "^3.0",

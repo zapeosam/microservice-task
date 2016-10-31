@@ -23,7 +23,12 @@ or in terminal
 
 `curl -o your_target_file.pdf http://localhost:8000/urltopdf?url=http://www.google.com`
 
-Option 2
+Option 2   
+`Vagrantfile missing in repo 
+having trouble with the combination of
+- PUPHPET 
+- vagrant 1.8.6 
+- virtualbox 5.0.24_Ubuntu r108355`
 
 in your terminal go to your project folder
 spin up vagrant vm by using the command `vagrant up` 
