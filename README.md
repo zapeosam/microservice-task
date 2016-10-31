@@ -34,6 +34,15 @@ or in terminal
 
 `curl -o your_target_file.pdf http://localhost:8080/urltopdf?url=http://www.google.com`
 
+Notes
+=========
+
+Error handling 
+-------------
+
+In this state if anything goes wrong it throws an exception
+see https://github.com/zapeosam/urltopdf-microservice/blob/master/PROGRESS.md for more 
+
 Resolution 800x600 in headless mode
 -------------
 
