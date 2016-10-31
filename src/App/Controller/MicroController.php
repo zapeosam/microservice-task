@@ -15,7 +15,15 @@ class MicroController extends Controller
     public function urltopdfAction(Request $request)
     {
         $url = $request->query->get('url');
-        return new Response($url);
+        $filename = uniqid(parse_url($url, PHP_URL_HOST).'.').'.pdf';
+        return new Response(
+            $this->get('knp_snappy.pdf')->getOutput($url),
+            200,
+            [
+                'Content-Type'        => 'application/pdf',
+                'Content-Disposition' => 'attachment; filename="'.$filename.'"',
+            ]
+        );
     }
 }
 
