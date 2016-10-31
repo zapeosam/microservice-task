@@ -17,7 +17,7 @@ in terminal run command `php -S localhost:8000`
 
 in your browser go to address
 
-`http://localhost:8000/api/api/urltopdf?url=http://www.google.com`
+`http://localhost:8000/api/urltopdf?url=http://www.google.com`
 
 or in terminal
 
