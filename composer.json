@@ -1,7 +1,9 @@
 {
     "require": {
         "symfony/symfony": "^3.1",
-        "sensio/framework-extra-bundle": "^3.0"
+        "sensio/framework-extra-bundle": "^3.0",
+        "knplabs/knp-snappy-bundle": "^1.4",
+        "h4cc/wkhtmltopdf-amd64": "^0.12.3"
     },
     "autoload": {
         "psr-4": {
