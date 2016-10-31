@@ -17,11 +17,11 @@ in terminal run command `php -S localhost:8000`
 
 in your browser go to address
 
-`http://localhost:8000/api/urltopdf?url=http://www.google.com`
+`http://localhost:8000/api/api/urltopdf?url=http://www.google.com`
 
 or in terminal
 
-`curl -o your_target_file.pdf http://localhost:8000/urltopdf?url=http://www.google.com`
+`curl -o your_target_file.pdf http://localhost:8000/api/urltopdf?url=http://www.google.com`
 
 Option 2   
 `Vagrantfile missing in repo 
@@ -37,7 +37,7 @@ spin up vagrant vm by using the command `vagrant up`
 
 or in terminal
 
-`curl -o your_target_file.pdf http://localhost:8080/urltopdf?url=http://www.google.com`
+`curl -o your_target_file.pdf http://localhost:8080/api/urltopdf?url=http://www.google.com`
 
 Notes
 =========
