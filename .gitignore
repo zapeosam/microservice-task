@@ -6,3 +6,4 @@ composer.lock
 !var/logs/.gitkeep
 !var/sessions/.gitkeep
 /vendor/
+/.vagrant
